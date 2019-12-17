@@ -19,7 +19,7 @@ after_success:
 #log into docker
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 # Push the build images to docker hub
- - docker push k8s/multi-client
- - docker push k8s/multi-nginx
- - docker push k8s/multi-server
- - docker push k8s/multi-workder
+  - docker push k8s/multi-client
+  - docker push k8s/multi-nginx
+  - docker push k8s/multi-server
+  - docker push k8s/multi-workder
