@@ -22,4 +22,4 @@ after_success:
   - docker push k8s/multi-client
   - docker push k8s/multi-nginx
   - docker push k8s/multi-server
-  - docker push k8s/multi-workder
+  - docker push k8s/multi-worker
