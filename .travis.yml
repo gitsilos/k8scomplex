@@ -15,6 +15,7 @@ after_success:
   - docker build -t k8s/multi-server ./server
   - docker build -t k8s/multi-worker ./worker
   
+  
 #log into docker
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 # Push the build images to docker hub
